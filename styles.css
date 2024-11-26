@@ -1,4 +1,3 @@
-/* Estructura del body y header */
 body {
     font-family: Helvetica, sans-serif;
     margin: 0;
@@ -6,36 +5,68 @@ body {
   }
   
   header {
+    background-color: #fff;
+    padding: 20px 0;
     position: sticky;
     top: 0;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  /* Barra superior */
   .top-bar {
-    background-color: #d1661c;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px; /* Ajusta el tamaño según tu preferencia */
+    font-weight: 1000; /* Puedes cambiar el grosor de la fuente */
+    background-color: #C9511D;
     color: white;
     text-align: center;
     padding: 10px 0;
   }
   
-  /* Menú de navegación */
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px;
+  }
+
+  .nav.left {
+    flex: 1;
+  }
+
+  .nav-center {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+    gap: 20px; /* Espacio entre los enlaces */
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
   }
   
-  /* Logo */
-  nav .logo img {
-    height: 50px; /* Ajusta el tamaño del logo */
-    width: auto;  /* Mantén las proporciones del logo */
-    margin-right: 20px;
+  nav .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    padding: 20px;
   }
   
-  /* Lista del menú */
+  nav .logo-img {
+    width: 50px; /* Ajusta el tamaño del logo */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+  }
+
   nav ul {
     list-style: none;
     display: flex;
@@ -47,24 +78,60 @@ body {
   nav ul li a {
     text-decoration: none;
     color: black;
-    font-size: 16px;
   }
   
-  /* Iconos del menú */
   .icons span {
     margin-left: 15px;
     cursor: pointer;
+    font-size: 20px;
+  }
+
+  .carousel {
+    width: 100%; /* O el tamaño específico que necesites */
+    max-width: 1787px; /* Máximo tamaño del carrusel */
+    margin: 0 auto; /* Centra el carrusel */
+    overflow: hidden;
   }
   
-  /* Ajuste para pantallas pequeñas */
-  @media (max-width: 768px) {
-    nav {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+  .carousel-item img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
   
-    .logo img {
-      margin-bottom: 10px;
-    }
+  
+  .carousel-container {
+    position: relative;
+    max-width: 100%;
+  }
+  
+  .carousel-container img {
+    width: 100%;
+    display: none;
+  }
+  
+  .carousel-container img.active {
+    display: block;
+  }
+  
+  .controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #f5f5f5;
+  }
+  
+  .products {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
   }
   
