@@ -1,5 +1,5 @@
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
   }
@@ -15,7 +15,7 @@ body {
   
   .top-bar {
     font-family: 'Quicksand', sans-serif;
-    font-size: 16px; /* Ajusta el tamaño según tu preferencia */
+    font-size: 21px; /* Ajusta el tamaño según tu preferencia */
     font-weight: 1000; /* Puedes cambiar el grosor de la fuente */
     background-color: #C9511D;
     color: white;
@@ -28,6 +28,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    font-size: 22px;
   }
 
   .nav.left {
@@ -39,7 +40,13 @@ body {
     justify-content: center;
     flex: 2;
     gap: 20px; /* Espacio entre los enlaces */
+    position: fixed; /* Fija el contenido */
+    top: 1; /* Mantiene el menú en la parte superior */
+    left: 1; /* Alinea el menú con el borde izquierdo */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    z-index: 10; /* Asegura que quede sobre otros elementos */
   }
+  
 
   .nav-links {
     display: flex;
@@ -63,8 +70,9 @@ body {
   }
   
   nav .logo-img {
-    width: 50px; /* Ajusta el tamaño del logo */
-    margin-right: 10px; /* Espacio entre el logo y el texto */
+    width: 149px; /* Ancho específico del logo */
+    height: 61px; /* Altura específica */
+    margin-right: 0px; /* Espacio entre el logo y el texto */
   }
 
   nav ul {
@@ -87,11 +95,15 @@ body {
   }
 
   .carousel {
-    width: 100%; /* O el tamaño específico que necesites */
-    max-width: 1787px; /* Máximo tamaño del carrusel */
+    width: 1787px; /* Ancho específico del carrusel */
+    height: 626px; /* Altura específica */
     margin: 0 auto; /* Centra el carrusel */
-    overflow: hidden;
-  }
+    overflow: hidden; /* Oculta el contenido desbordante */
+    padding: 0 50px; /* Espacio blanco de 50px a cada lado */
+    background-color: #fff; /* Color de fondo blanco */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho/alto */
+}
+
   
   .carousel-item img {
     width: 100%;
@@ -127,6 +139,7 @@ body {
     justify-content: space-around;
     padding: 20px;
     background: #f5f5f5;
+    font-size: 20px;
   }
   
   .products {
@@ -134,4 +147,96 @@ body {
     gap: 20px;
     justify-content: center;
   }
+
+  #nosotros {
+    font-size: 30px;
+    padding: 20px;
+  }
   
+  h2 {
+    margin-bottom: 5px; /* Espacio entre el título y el texto */
+  }
+  
+  .content {
+    display: flex; /* Para que el texto y la imagen estén en fila */
+    justify-content: space-between; /* Distribuye el texto a la izquierda y la imagen a la derecha */
+    align-items: center; /* Alinea el contenido verticalmente */
+    width: 100%;
+  }
+  
+  .text {
+    width: 50%; /* Ocupa la mitad de la pantalla */
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding: 20px;
+  }
+  
+  .text p {
+    font-size: 28px; /* Cambia el valor según el tamaño deseado */
+  }
+  
+  .image {
+    width: 50%; /* Ocupa la otra mitad de la pantalla */
+    padding: 20px;
+  }
+  
+  .content img {
+    width: 75%; /* Ajusta la imagen al ancho del contenedor */
+    height: auto;
+  }
+  
+  #tienda {
+    font-size: 30px;
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 5px; /* Espacio entre el título y el texto */
+  }
+  
+  .content {
+    display: flex; /* Para que el texto y la imagen estén en fila */
+    justify-content: space-between; /* Distribuye el texto a la izquierda y la imagen a la derecha */
+    align-items: center; /* Alinea el contenido verticalmente */
+    width: 100%;
+  }
+  
+  .text {
+    width: 50%; /* Ocupa la mitad de la pantalla */
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding: 20px;
+  }
+  
+  .text p {
+    font-size: 28px; /* Cambia el valor según el tamaño deseado */
+  }
+  
+  .image {
+    width: 50%; /* Ocupa la otra mitad de la pantalla */
+    padding: 20px;
+  }
+  
+  .content img {
+    width: 75%; /* Ajusta la imagen al ancho del contenedor */
+    height: auto;
+  }
+
+  #tienda {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .products {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre los productos */
+  }
+  
+  .product {
+    width: 33%; /* Cada imagen ocupa el 33% del ancho */
+    text-align: center;
+  }
+  
+  .product img {
+    width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+    height: auto;
+  }
