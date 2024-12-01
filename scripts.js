@@ -84,7 +84,7 @@ function handleCart() {
     return;
   }
 
-  const phoneNumber = "573001234567";
+  const phoneNumber = "573105620190";
   const baseMessage = "Hola, estoy interesado en comprar los siguientes productos:\n\n";
   const productDetails = cart
     .map((item, index) => `${index + 1}. ${item.name} - $${parseInt(item.price).toLocaleString()}`)
