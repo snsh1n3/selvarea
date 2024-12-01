@@ -1,13 +1,14 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Selvárea es una marca colombiana que celebra la biodiversidad a través de prendas únicas con bordados hechos a mano.">
   <title>Selvárea</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="Imagenes/favicon.png" type="image/x-icon">
-  <link href="  https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,54 +17,43 @@
     <nav>
       <div class="nav-left">
         <a href="#" class="logo">
-          <img src="Imagenes/logo1.png" alt="Selvárea" class="logo-img">
+          <img src="Imagenes/logo1.png" alt="Logo de Selvárea" class="logo-img">
         </a>
       </div>
       <ul class="nav-center">
-        <li><a href="#">Inicio</a></li>
+        <li><a href="#" id="home-link">Inicio</a></li>
         <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#tienda">Tienda</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
       <div class="nav-right">
-        <div class="icons">
-          <button id="search-btn">Buscar</button>
-          <button id="user-btn">Usuario</button>
-          <button id="cart-btn">Carrito</button>
-        </div>
+        <button id="search-btn">
+          <img src="Imagenes/search-icon.png" alt="Buscar" class="nav-icon" style="width: 33px; height: 33px; vertical-align: middle;"> Buscar
+        </button>
+        <button id="profile-btn">
+          <img src="Imagenes/profile-icon.png" alt="Perfil" class="nav-icon" style="width: 33px; height: 33px; vertical-align: middle;"> Perfil
+        </button>
+        <button id="cart-btn">
+          <img src="Imagenes/cart-icon.png" alt="Carrito" class="nav-icon" style="width: 33px; height: 33px; vertical-align: middle;"> Carrito
+        </button>
+      </div>
+      </div>
       </div>
     </nav>
   </header>
 
-  <!-- Ventana de búsqueda (inicialmente oculta) -->
-  <div id="search-modal" style="display: none;">
-    <input type="text" placeholder="Buscar...">
-    <button id="close-search">Cerrar</button>
-  </div>
-
-  <!-- Formulario de inicio de sesión (inicialmente oculto) -->
-  <div id="login-modal" style="display: none;">
-    <input type="text" placeholder="Usuario">
-    <input type="password" placeholder="Contraseña">
-    <button id="close-login">Cerrar</button>
-  </div>
-</body>
-
   <section id="carousel">
     <div class="carousel-container">
-      <img src="Imagenes/image1.png" alt="Imagen de bordado" class="active">
+      <img src="Imagenes/image1.png" alt="Fotografía de bordado artesanal de un colibrí en una chaqueta" class="active">
       <div class="controls">
         <span class="prev">❮</span>
         <span class="next">❯</span>
       </div>
     </div>
     <div class="features">
-      <div><img src="Imagenes/envios.png" alt="Ícono de envíos" style="width: 33px; height: 33px; vertical-align: middle;">
-        Envíos nacionales e internacionales</div>
-      <div><img src="Imagenes/productoColombiano.png" alt="Ícono de producto colombiano" style="width: 33px; height: 33px; vertical-align: middle;">
-        Producto 100% Colombiano</div>
-      <div><img src="Imagenes/hechoaMano.png" alt="Ícono de producto colombiano" style="width: 33px; height: 33px; vertical-align: middle;">
-        Hecho a mano</div>
+      <div><img src="Imagenes/envios.png" alt="Ícono de envíos nacionales e internacionales" style="width: 33px; height: 33px; vertical-align: middle;"> Envíos nacionales e internacionales</div>
+      <div><img src="Imagenes/productoColombiano.png" alt="Ícono que representa un producto colombiano" style="width: 33px; height: 33px; vertical-align: middle;"> Producto 100% Colombiano</div>
+      <div><img src="Imagenes/hechoaMano.png" alt="Ícono que representa un producto hecho a mano" style="width: 33px; height: 33px; vertical-align: middle;"> Hecho a mano</div>
     </div>
   </section>
 
@@ -71,48 +61,56 @@
     <h2>Nosotros</h2>
     <div class="content">
       <div class="text">
-        <p>Selvárea es una marca colombiana que celebra 
-          la riqueza natural del país a través de prendas únicas 
-          con bordados realistas de animales, hechos a mano 
-          por artesanos locales. 
-          Inspirada en la biodiversidad y los ecosistemas colombianos,
-          Selvárea fusiona arte, sostenibilidad y diseño contemporáneo, 
-          creando piezas que son más que ropa: son un homenaje al 
-          patrimonio cultural y natural. 
-          
-          Cada puntada cuenta una historia, destacando la conexión 
-          entre moda y conservación ambiental, mientras empodera a 
-          comunidades locales y preserva técnicas artesanales. </p>
+        <p>Selvárea es una marca colombiana que celebra la riqueza natural del país a través de prendas únicas con bordados realistas de animales, hechos a mano por artesanos locales. Inspirada en la biodiversidad y los ecosistemas colombianos, Selvárea fusiona arte, sostenibilidad y diseño contemporáneo, creando piezas que son más que ropa: son un homenaje al patrimonio cultural y natural. Cada puntada cuenta una historia, destacando la conexión entre moda y conservación ambiental, mientras empodera a comunidades locales y preserva técnicas artesanales.</p>
       </div>
       <div class="image">
-        <img src="Imagenes/colibriBordado.png" alt="Colibrí bordado">
+        <img src="Imagenes/colibriBordado.png" alt="Colibrí bordado a mano en una chaqueta">
       </div>
     </div>
   </section>
-  
-  
+
   <section id="tienda">
     <h2>Shop Now</h2>
     <div class="products">
-      <div class="product">
-        <img src="Imagenes/jacket1.png" alt="Love Birds">
+      <div class="product" data-product-name="Love Birds" data-product-price="800000">
+        <img src="Imagenes/jacket1.png" alt="Chaqueta Love Birds con bordado de pájaros">
         <p>Love Birds</p>
         <p>$800.000</p>
+        <button class="add-to-cart">Añadir al carrito</button>
       </div>
-      <div class="product">
-        <img src="Imagenes/jacket2.png" alt="Rockstar">
+      <div class="product" data-product-name="Rockstar" data-product-price="900000">
+        <img src="Imagenes/jacket2.png" alt="Chaqueta Rockstar con bordado llamativo">
         <p>Rockstar</p>
         <p>$900.000</p>
+        <button class="add-to-cart">Añadir al carrito</button>
       </div>
-      <div class="product">
-        <img src="Imagenes/jacket3.png" alt="Roar">
+      <div class="product" data-product-name="Roar" data-product-price="1000000">
+        <img src="Imagenes/jacket3.png" alt="Chaqueta Roar con bordado de tigre">
         <p>Roar</p>
         <p>$1.000.000</p>
+        <button class="add-to-cart">Añadir al carrito</button>
       </div>
     </div>
-  </section>
-  
-
+  </section>  
+  <div id="search-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" data-modal="search-modal">&times;</span>
+      <h2>Buscar en Selvárea</h2>
+      <input type="text" id="search-input" placeholder="Escribe aquí tu búsqueda">
+      <button id="search-submit">Buscar</button>
+      <div id="search-results"></div>
+    </div>
+  </div>
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" data-modal="login-modal">&times;</span>
+      <h2>Iniciar Sesión</h2>
+      <label for="username">Usuario:</label>
+      <input type="text" id="username" placeholder="Ingresa tu usuario">
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" placeholder="Ingresa tu contraseña">
+      <button id="login-submit">Entrar</button>
+    </div>
   <script src="scripts.js"></script>
 </body>
 
