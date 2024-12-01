@@ -30,5 +30,5 @@ document.getElementById("close-login").addEventListener("click", function() {
 
 // Redirigir a WhatsApp
 document.getElementById("cart-btn").addEventListener("click", function() {
-  window.location.href = "https://wa.me/57315xxxxxxx"; // Cambia el número por el adecuado
+  window.location.href = "https://wa.me/573105620190"; // Cambia el número por el adecuado
 });
