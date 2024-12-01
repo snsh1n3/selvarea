@@ -27,15 +27,27 @@
       </ul>
       <div class="nav-right">
         <div class="icons">
-          <span>🔍</span>
-          <span>👤</span>
-          <span>🛒</span>
+          <button id="search-btn">Buscar</button>
+          <button id="user-btn">Usuario</button>
+          <button id="cart-btn">Carrito</button>
         </div>
       </div>
     </nav>
   </header>
-</body>
 
+  <!-- Ventana de búsqueda (inicialmente oculta) -->
+  <div id="search-modal" style="display: none;">
+    <input type="text" placeholder="Buscar...">
+    <button id="close-search">Cerrar</button>
+  </div>
+
+  <!-- Formulario de inicio de sesión (inicialmente oculto) -->
+  <div id="login-modal" style="display: none;">
+    <input type="text" placeholder="Usuario">
+    <input type="password" placeholder="Contraseña">
+    <button id="close-login">Cerrar</button>
+  </div>
+</body>
 
   <section id="carousel">
     <div class="carousel-container">
